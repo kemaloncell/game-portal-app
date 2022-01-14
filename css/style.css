@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
-* *::after,
+.bg-dark {
+  background-color: #14151a;
+}
+
+.bg-light {
+  background-color: #fefefe;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.btn {
+  background-color: #fefefe;
+  color: #e51515;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.btn:hover {
+  background-color: #e51515;
+  color: #fefefe;
+}
+
+.btn-primary {
+  background-color: #e51515;
+  color: #fefefe;
+}
+
+.btn-primary:hover {
+  background-color: #fefefe;
+  color: #e51515;
+}
+
+*,
+*::after,
 *::before {
   margin: 0;
   padding: 0;
@@ -27,7 +67,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Changa", sans-serif;
-  /*   color: $light-color; */
+  color: #fefefe;
 }
 
 ul {
