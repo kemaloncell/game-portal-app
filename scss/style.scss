@@ -1,52 +1,84 @@
-//Fonts
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@500&family=Open+Sans:wght@300&display=swap");
+@import 'abstracts';
+@import 'components';
 
-// VARIABLES
-$primary-font: "Changa", sans-serif;
-$secondary-font: "Open Sans", sans-serif;
-$primary-color: #e51515;
-$secondary-color: #14151a;
-$date-color: #ffb320;
-$comment-color: #08abbd;
-$gray-color: #9f9f9f;
-$light-color: #fefefe;
-
-// GENERAL SETTINGS
+//! GENERAL SETTINGS
 
 * *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
+	font-size: 10px;
 }
 
 body {
-  font-family: $secondary-font;
-  color: $gray-color;
-  background-color: $light-color;
+	font-family: $secondary-font;
+	color: $gray-color;
+	background-color: $light-color;
 }
 
 .container {
-  max-width: 114rem;
-  margin: 0 auto;
-  width: 100%;
+	max-width: 114rem;
+	margin: 0 auto;
+	width: 100%;
 }
 
 a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: $primary-font;
-  /*   color: $light-color; */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $primary-font;
+	/*   color: $light-color; */
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  width: 100%;
+	width: 100%;
+}
+
+//! TOP HEADER
+.top-header {
+	border-bottom: 1px solid $primary-color;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			h1 {
+				font-size: 5rem;
+				font-family: $primary-font;
+				color: $primary-color;
+			}
+		}
+
+		.top-social-menu {
+			display: flex;
+			li {
+				margin: 0 1rem;
+				padding: 1rem;
+
+				a {
+					font-size: 2rem;
+					transition: all 0.5s;
+				}
+
+				&:hover a {
+					color: $primary-color;
+				}
+			}
+		}
+
+		.login-area {
+			span {
+				display: none;
+			}
+		}
+	}
 }
