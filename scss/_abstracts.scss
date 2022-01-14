@@ -27,3 +27,11 @@ $light-color: #fefefe;
 		margin-left: 2rem;
 	}
 }
+
+//! MIXINS
+
+@mixin flex-display($display, $align-items, $justify-content) {
+	display: $display;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
