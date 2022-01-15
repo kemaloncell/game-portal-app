@@ -38,6 +38,64 @@
   color: #e51515;
 }
 
+.badge {
+  border: none;
+  padding: 0.2rem 2.4rem;
+  font-size: 1.6rem;
+  color: #fefefe;
+  background-color: #e51515;
+  margin: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.badge-tech {
+  background-color: #08abbd;
+}
+
+.badge-game {
+  background-color: #ffb320;
+}
+
+@-webkit-keyframes mainAni {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    border-top: 0px solid #e51515;
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+    border-top: 1px solid #fefefe;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    border-top: 2px solid #e51515;
+  }
+}
+
+@keyframes mainAni {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    border-top: 0px solid #e51515;
+  }
+  50% {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+    border-top: 1px solid #fefefe;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    border-top: 2px solid #e51515;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -63,12 +121,30 @@ body {
   width: 100%;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Changa", sans-serif;
+  color: #e51515;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
   font-size: 5rem;
   color: #fefefe;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #fefefe;
 }
 
 a {
@@ -100,12 +176,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.top-header .container .logo h1 {
-  font-size: 5rem;
-  font-family: "Changa", sans-serif;
-  color: #e51515;
 }
 
 .top-header .container .top-social-menu {
@@ -232,6 +302,8 @@ img {
   border-top: 2px solid #e51515;
   border-bottom: 2px solid #e51515;
   padding: 10rem 7rem;
+  -webkit-animation: mainAni 3s ease-out;
+          animation: mainAni 3s ease-out;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.1)));
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
 }
@@ -278,5 +350,48 @@ img {
   font-size: 3.5rem;
   font-family: "Changa", sans-serif;
   background: transparent;
+}
+
+.latest-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e51515;
+  height: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.latest-news-title {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.latest-news-content {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  background-color: #14151a;
+  height: 100%;
+}
+
+.latest-news .news-ticker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 8rem;
+}
+
+.latest-news .news-ticker p {
+  color: #fefefe;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */
