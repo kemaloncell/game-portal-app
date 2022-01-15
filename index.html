@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome css -->
     <link rel="stylesheet" href="./css/fontawesome-all.css">
+    
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css" >
+
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Game Portal</title>
@@ -72,5 +77,63 @@
            </div>
        </div>
    </header>
+
+   <main role="main">
+      <!-- Main Slider -->
+    <div class="main-slider owl-carousel owl-theme">
+           <!-- Single Slide -->
+        <div class="single-slide">
+                <img src="./img/slide_1.jpg" alt="">
+             <div class="slide-overlay">
+                 <div class="container">
+                      <div class="slide-content">
+                        <h1>Game Portal</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo aspernatur, a quos enim voluptatibus tempora quo debitis blanditiis quae non dolore voluptatem repellat repudiandae dolores consequatur quisquam, corrupti nisi?</p>
+                      </div>
+                 </div>
+             </div>
+        </div>
+              <!-- Single Slide 3 -->
+        <div class="single-slide">
+            <img src="./img/slide_2.jpg" alt="">
+            <div class="slide-overlay">
+                <div class="container">
+                  <div class="slide-content">
+                    <h1>Game Portal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo aspernatur, a quos enim voluptatibus tempora quo debitis blanditiis quae non dolore voluptatem repellat repudiandae dolores consequatur quisquam, corrupti nisi?</p>
+                  </div>
+              </div>
+           </div>
+       </div>  
+           <!-- Single Slide 2 -->
+        <div class="single-slide">
+            <img src="./img/slide_3.jpg" alt="">
+            <div class="slide-overlay">
+                <div class="container">
+                  <div class="slide-content">
+                    <h1>Game Portal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo aspernatur, a quos enim voluptatibus tempora quo debitis blanditiis quae non dolore voluptatem repellat repudiandae dolores consequatur quisquam, corrupti nisi?</p>
+                  </div>
+              </div>
+           </div>
+       </div>
+
+    </div>
+  </main>
+
+  <!-- Jquery -->
+  <script src="js/jquery-3.6.0.slim.js"></script>
+  <!-- Owl carousel -->
+  <script src="js/owl.carousel.js"></script>
+
+  <script>
+    $(document).ready(function(){
+     let owl = $(".owl-carousel").owlCarousel({
+         autoplay:false,
+         dots:false,
+         items:1
+     })
+     });
+  </script>
 </body>
 </html>
