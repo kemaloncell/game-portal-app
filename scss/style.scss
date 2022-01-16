@@ -291,9 +291,8 @@ img {
 //! RECENT GAMES SECTION
 
 .recent-games {
-	background-color: orange;
-
 	&-content {
+		margin-bottom: 4rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto;
@@ -309,7 +308,7 @@ img {
 			.recent-game-thumbnail {
 				height: 100%;
 				img {
-					height: 100%;
+					width: 100%;
 				}
 			}
 
@@ -433,4 +432,29 @@ img {
 }
 .recent-game-6 {
 	grid-area: item-6;
+}
+
+//! LATEST REVIEWED SECTION
+
+.last-reviewed {
+	height: 50vh;
+	@include flex-display(flex, center, space-between);
+	padding: 0;
+	background-color: $secondary-color;
+
+	&-detail {
+		flex-basis: 40%;
+	}
+	&-image {
+		flex-basis: 60%;
+		background-image: linear-gradient(
+				to right bottom,
+				rgba($primary-color, 1),
+				rgba($primary-color, 0.1)
+			),
+			url('../img/game_3.jpg');
+		background-size: cover;
+		height: 100%;
+		clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+	}
 }
